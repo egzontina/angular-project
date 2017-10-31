@@ -2,15 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { UsersComponent } from './users/users.component';
+
+import { LokiService } from './loki/loki.service';
+import { HttpModule } from '@angular/http';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    NgxPaginationModule
   ],
-  providers: [],
+  providers: [LokiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
