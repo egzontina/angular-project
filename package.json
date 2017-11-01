@@ -25,6 +25,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "lokijs": "^1.5.1",
+    "ng2-search-filter": "^0.3.1",
     "ngx-pagination": "^3.0.3",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
